@@ -486,14 +486,20 @@
 
 <section class="footer3">
   <!-- CONTAINER -->
-  <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
   <form class="signup-form">
-    <input type="E-mail" name="E-mail">
-
-    <button class="submit">Подписаться</button>
-
-
+    <div class="group">
+      <label for="email" class="label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+      <input class="input" type="email" name="email" id="email" />
+    
+      <div class="input-footer">
+       <button type="submit" class="button-footer">Подписаться</button>
+         <svg width="24" height="24" class="icon-footer">
+          <use href="images/sprite.svg#icon-send"></use>
+         </svg>
+      </div>
+    </div>
   </form>
+      
 
 </section>
 
