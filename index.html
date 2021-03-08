@@ -486,18 +486,19 @@
 
 <section class="footer3">
   <!-- CONTAINER -->
-  <form class="signup-form">
+  <form class="signup-form-footer">
     <div class="group">
       <label for="email" class="label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
       <input class="input" type="email" name="email" id="email" />
-    
-      <div class="input-footer">
+    </div>
+
+      <div class="footer-subscribe">
        <button type="submit" class="button-footer">Подписаться</button>
          <svg width="24" height="24" class="icon-footer">
           <use href="images/sprite.svg#icon-send"></use>
          </svg>
       </div>
-    </div>
+    
   </form>
       
 
@@ -516,6 +517,52 @@
             <use href="./images/sprite.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
      </button>
+
+     <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+
+     <form class="signup-form">
+       <div class="group-modal">
+         <label for="name">Имя</label>
+          <div class="input-wrapper-modal">
+            <input class="input-modal" type="name" name="name" id="name">
+              <svg width="18" height="18" class="icon-modal">
+                <use href="images/sprite.svg#icon-person"></use>
+              </svg>
+          </div>
+       </div>
+
+       <div class="group-modal">
+         <label for="telefon">Телефон</label>
+          <div class="input-wrapper-modal">
+           <input class="input-modal" type="telefon" name="telefon" id="telefon">
+            <svg width="18" height="18" class="icon-modal">
+             <use href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+      </div>
+
+      <div class="group-modal">
+        <label for="email">Почта</label>
+         <div class="input-wrapper-modal">
+          <input class="input-modal" type="email" name="email" id="email-modal">
+           <svg width="18" height="18" class="icon-modal">
+            <use href="images/sprite.svg#icon-email2"></use>
+           </svg>
+         </div>
+      </div>
+
+      <div class="group-modal">
+        <label for="comments">Комментарий</label>
+        <input class="input-modal" type="comments" name="comments" id="comments">
+       
+        <p class="conditions">Соглашаюсь с рассылкой и принимаю<span class="modal-conditiones-blue"> Условия договора</span></p>
+        
+      </div>
+
+      <button type="submit">Отправить</button> 
+     
+      </form>
+
   </div>
 </div>
 

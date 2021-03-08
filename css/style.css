@@ -937,52 +937,142 @@ li .button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* стилизация форм модального окна*/
+
+.modal-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.17;
+  color: var(--black-text);
+  padding-top: 40px;
+  padding-bottom: 12px;
+  padding-left: 41px;
+  padding-right: 39px;
+}
+
+.signup-form {
+  width: 448px;
+  height: 342px;
+  padding-right: 39px;
+  padding-left: 41px;
+  border-radius: 4px; 
+  background-color: var(--background-white);
+}
+
+.signup-form .input-modal {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+}
+
+.signup-form .input-modal:focus {
+  border: 1px solid var(--blue-text);
+
+}
+
+.signup-form .group-modal {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  color: var(--grey-text);
+}
+
+.signup-form .label {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--grey-text);
+
+}
+
+.signup-form .input-wrapper-modal{
+  position: relative;
+
+}
+
+.signup-form .icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+}
+
+.signup-form .conditions {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: var(--grey-text);
+  
+}
+
+.signup-form .modal-conditiones-blue {
+  color: var(--blue-text);
+}
+
+.input-modal:focus +.icon-modal {
+  fill: var(--blue-text);
+  
+}
+
 /* формы стилизация футера */
 .footer3 {
   margin-left: 93px;
   
 }
 
-.signup-form {
-  width: 358px;
+.signup-form-footer {
+  max-width: 358px;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 4px; 
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  font-family: Roboto, sans-serif;
-  
 }
 
-.label {
-  font-style: normal;
+.signup-form-footer .input {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--background-black);
+  color: var(--white-text-op60);
+  font-family: Roboto, sans-serif;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.signup-form-footer .group {
+  display: flex; 
+  flex-direction: column;  
+
+}
+
+.signup-form-footer .label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16,41px;
-  letter-spacing: 0.02em;
+  font-style: normal; 
+  font-size: 14px; 
+  line-height: 16,41px; 
+  letter-spacing: 0.02em; 
   color: var(--white-text);
 }
 
-.signup-form .input {
-  padding-left: 16px;
-  width: 100%;
-  color: var(--white-text-op60);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: Roboto, sans-serif;
-  outline: none;
-  border-radius: 4px;
-  background-color: var(--background-black);
-  font-size: 16px;
-  line-height: 1.25;
-
-
-}
-
-.signup-form .group {
-  display: flex;
-  margin-bottom: 20px;
-  
-}
-
-.button-footer {
+* .button-footer {
   font-family: Roboto, sans-serif;
   color: var(--white-text);
   background-color: var(--blue-text);
@@ -998,16 +1088,15 @@ li .button {
   border-radius: 4px;
 }
 
-.input-footer {
+.signup-form-footer .footer-subscribe {
   position: relative;
-
 }
 
-.input-footer .icon-footer {
+.signup-form-footer .icon-footer {
   position: absolute;
   top: 50%;
-  right: 13px;
+  right: 37px;
+  fill: var(--white-text);
   transform: translateY(-50%);
+} 
 
-
-}
