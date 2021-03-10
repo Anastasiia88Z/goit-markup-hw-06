@@ -950,16 +950,17 @@ li .button {
   padding-bottom: 12px;
   padding-left: 41px;
   padding-right: 39px;
+
 }
 
-.signup-form {
+/* .signup-form {
   width: 448px;
   height: 342px;
   padding-right: 39px;
   padding-left: 41px;
   border-radius: 4px; 
   background-color: var(--background-white);
-}
+} */
 
 .signup-form .input-modal {
   width: 100%;
@@ -969,16 +970,21 @@ li .button {
   font-family: Roboto, sans-serif;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 
 }
 
 .signup-form .input-modal:focus {
-  border: 1px solid var(--blue-text);
-
+  border-color: var(--blue-text);
 }
 
+.signup-form .input-modal:focus + .icon-modal {
+  fill: var(--blue-text);
+}
+
+
 .signup-form .group-modal {
-  margin-bottom: 10px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   color: var(--grey-text);
@@ -999,6 +1005,8 @@ li .button {
 .signup-form .input-wrapper-modal{
   position: relative;
 
+  margin-bottom: 10px;
+
 }
 
 .signup-form .icon-modal {
@@ -1009,7 +1017,39 @@ li .button {
 
 }
 
-.signup-form .conditions {
+textarea {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+  font-size: 14px;
+  line-height: 1.17;
+  padding: 12px 16px;
+  outline: none;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: var(--blue-text);
+}
+
+.check-modal {
+  display: inline;
+}
+
+.check-modal .span {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  background-color: var(--background-white);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.form-check {
+  display: inline-block;
+  align-items: center;
+
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400; 
@@ -1018,16 +1058,61 @@ li .button {
   margin-top: 20px;
   margin-bottom: 30px;
   color: var(--grey-text);
-  
+
+  text-align: center;
+
+  margin-left: 54px;
+} 
+
+.checkbox:checked +.span {
+  background-color: var(--background-blue);
+  border-color: var(--blue-text);
+  background-image: url(../images/check-box.svg);
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+
 }
 
-.signup-form .modal-conditiones-blue {
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.signup-form .check-link {
   color: var(--blue-text);
 }
 
-.input-modal:focus +.icon-modal {
+.input-modal:focus + .icon-modal {
   fill: var(--blue-text);
   
+}
+
+.button-modal2 {
+  font-family: Roboto, sans-serif;
+  color: var(--white-text);
+  background-color: var(--blue-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 55px;
+  border-radius: 4px;
+
+  width: 200px;
+  height: 50px;
+
+  margin-left: 165px;
+
 }
 
 /* формы стилизация футера */
@@ -1054,13 +1139,13 @@ li .button {
   line-height: 1.25;
 }
 
-.signup-form-footer .group {
+.group {
   display: flex; 
-  flex-direction: column;  
+  flex-direction: column;
 
-}
+} 
 
-.signup-form-footer .label {
+.label-footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -1088,11 +1173,11 @@ li .button {
   border-radius: 4px;
 }
 
-.signup-form-footer .footer-subscribe {
+.footer-subscribe {
   position: relative;
 }
 
-.signup-form-footer .icon-footer {
+.icon-footer {
   position: absolute;
   top: 50%;
   right: 37px;

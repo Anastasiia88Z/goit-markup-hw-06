@@ -486,20 +486,19 @@
 
 <section class="footer3">
   <!-- CONTAINER -->
-  <form class="signup-form-footer">
     <div class="group">
-      <label for="email" class="label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-      <input class="input" type="email" name="email" id="email" />
-    </div>
+      <p class="sign">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+      <input class="input" type="email" placeholder="E-mail"/>
+    
 
       <div class="footer-subscribe">
        <button type="submit" class="button-footer">Подписаться</button>
          <svg width="24" height="24" class="icon-footer">
           <use href="images/sprite.svg#icon-send"></use>
          </svg>
-      </div>
-    
-  </form>
+    </div>
+  </div>
+
       
 
 </section>
@@ -521,6 +520,7 @@
      <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
 
      <form class="signup-form">
+
        <div class="group-modal">
          <label for="name">Имя</label>
           <div class="input-wrapper-modal">
@@ -551,15 +551,22 @@
          </div>
       </div>
 
-      <div class="group-modal">
-        <label for="comments">Комментарий</label>
-        <input class="input-modal" type="comments" name="comments" id="comments">
-       
-        <p class="conditions">Соглашаюсь с рассылкой и принимаю<span class="modal-conditiones-blue"> Условия договора</span></p>
-        
+      <label class="group-modal">
+        <span class="comments">Комментарий</span>
+        <textarea name="comments" rows="6" placeholder="Введите текст"></textarea>        
+      </label>
+
+      <div class="check-modal">
+        <label class="form-check">
+          <input type="checkbox" class="checkbox">
+
+          <span class="span"></span>
+
+          Соглашаюсь с рассылкой и принимаю <a href="" class="check-link">Условия договора</a>
+        </label>
       </div>
 
-      <button type="submit">Отправить</button> 
+      <button type="submit" class="button-modal2">Отправить</button> 
      
       </form>
 
